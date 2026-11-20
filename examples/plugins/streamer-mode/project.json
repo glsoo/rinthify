@@ -1,0 +1,8 @@
+{
+	"id": "streamer-mode",
+	"name": "Streamer Mode",
+	"version": "1.0.0",
+	"author": "Rinthify",
+	"description": "Blurs your username and server IPs.",
+	"main": "index.js"
+}

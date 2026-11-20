@@ -1,0 +1,12 @@
+/* blue */
+html.dark-mode,
+html.oled-mode,
+html.light-mode {
+	--surface-1: #0b0e17;
+	--surface-2: #10141f;
+	--surface-3: #161b2a;
+	--surface-4: #1d2336;
+	--surface-5: #2a3250;
+	--color-brand: #7aa2f7;
+	--color-brand-highlight: rgba(122, 162, 247, 0.25);
+}

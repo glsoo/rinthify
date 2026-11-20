@@ -1,0 +1,78 @@
+/* amber */
+html.dark-mode,
+html.oled-mode,
+html.light-mode {
+	/* backgrounds */
+	--surface-1: #121110;
+	--surface-1-5: #161513;
+	--surface-2: #1a1917;
+	--surface-2-5: #1f1d1a;
+	--surface-3: #24221f;
+	--surface-4: #302d29;
+	--surface-5: #3e3a35;
+
+	/* text */
+	--color-text-primary: #f5f0e8;
+	--color-text-default: #cbc3b6;
+	--color-text-tertiary: #a19888;
+	--color-base: var(--color-text-default);
+	--color-secondary: var(--color-text-tertiary);
+	--color-contrast: var(--color-text-primary);
+
+	/* accent */
+	--color-brand: var(--accent, #f2a93b);
+	--color-brand-highlight: color-mix(in srgb, var(--color-brand) 16%, transparent);
+	--color-brand-shadow: color-mix(in srgb, var(--color-brand) 45%, transparent);
+	--color-accent-contrast: #1a1206;
+	--color-button-bg-selected: var(--color-brand-highlight);
+	--color-button-text-selected: var(--color-brand);
+
+	/* other colors */
+	--color-bg: var(--surface-1);
+	--color-raised-bg: var(--surface-3);
+	--color-super-raised-bg: var(--surface-4);
+	--color-button-bg: var(--surface-4);
+	--color-button-border: rgba(255, 236, 205, 0.08);
+	--color-divider: var(--surface-4);
+	--color-scrollbar: var(--surface-5);
+	--color-ad: #221c13;
+	--color-gradient-button-bg: linear-gradient(180deg, #37332e 0%, #302d29 100%);
+	--brand-gradient-bg: linear-gradient(0deg, rgba(40, 28, 10, 0.2) 0%, rgba(140, 95, 30, 0.08) 100%);
+	--brand-gradient-strong-bg: linear-gradient(270deg, #120f0b 10%, #1e1912 100%);
+	--brand-gradient-button: rgba(255, 255, 255, 0.06);
+	--brand-gradient-border: rgba(255, 210, 140, 0.08);
+	--brand-gradient-fade-out-color: linear-gradient(to bottom, rgba(26, 25, 23, 0), #1a1917 80%);
+	--loading-bar-gradient: linear-gradient(to right, #f2a93b 0%, #ffd27a 100%);
+	--splash-tint-top: rgba(150, 100, 35, 0.25);
+	--splash-tint-bottom: rgba(30, 22, 12, 0.5);
+	--splash-overlay: rgba(18, 17, 16, 0.66);
+	--shadow-card: rgba(0, 0, 0, 0.35) 0px 2px 6px 0px;
+	--radius-xl: 1rem;
+}
+
+/* sidebar */
+.app-grid-navbar .nav-button {
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+.app-grid-navbar .nav-button.router-link-active {
+	background: var(--color-brand) !important;
+	color: var(--color-accent-contrast) !important;
+}
+
+/* focus */
+:focus-visible {
+	outline: 2px solid var(--color-brand) !important;
+	outline-offset: 2px;
+}
+
+/* scrollbars */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--surface-5); border-radius: 999px; border: 3px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background-color: #5a544c; }
+
+::selection { background: rgba(242, 169, 59, 0.35); }
+
+@media (prefers-reduced-motion: reduce) {
+	.app-grid-navbar .nav-button { transition: none; }
+}

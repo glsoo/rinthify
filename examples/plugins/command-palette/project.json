@@ -1,0 +1,8 @@
+{
+	"id": "command-palette",
+	"name": "Command Palette",
+	"version": "1.0.0",
+	"author": "Rinthify",
+	"description": "Ctrl+K to search instances and pages.",
+	"main": "index.js"
+}

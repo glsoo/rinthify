@@ -1,0 +1,7 @@
+{
+	"name": "Amber",
+	"version": "1.0.0",
+	"author": "Rinthify",
+	"description": "Warm dark gray with an amber accent",
+	"options": [{ "id": "accent", "type": "color", "label": "Accent", "default": "#f2a93b" }]
+}

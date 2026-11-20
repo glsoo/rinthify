@@ -1,0 +1,8 @@
+{
+	"id": "adblock",
+	"name": "AdBlock",
+	"version": "1.0.0",
+	"author": "",
+	"description": "Hides the sidebar ads.",
+	"main": "index.js"
+}

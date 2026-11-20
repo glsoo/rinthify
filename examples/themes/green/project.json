@@ -1,0 +1,7 @@
+{
+	"name": "Green",
+	"version": "1.0.0",
+	"author": "Rinthify",
+	"description": "Modrinth green, separate panels over a night sky",
+	"options": [{ "id": "clock", "type": "toggle", "label": "Clock", "default": true }]
+}

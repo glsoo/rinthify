@@ -1,0 +1,22 @@
+/* fluid, needs theme.js */
+html.dark-mode,
+html.oled-mode,
+html.light-mode {
+	--surface-1: #000000;
+	--surface-2: #050505;
+	--surface-3: #0a080f;
+	--surface-4: #100a18;
+	--surface-5: #1a1026;
+	--color-brand: #a855f7;
+	--color-brand-highlight: rgba(168, 85, 247, 0.28);
+}
+
+/* see-through so the fluid shows */
+html { background: #000 !important; }
+body { background: transparent !important; }
+.app-grid-layout, .app-title-bar { background: transparent !important; }
+.app-grid-navbar, .app-contents {
+	/* no backdrop-filter, its slow and the fluid is blurry anyway */
+	background: color-mix(in srgb, var(--surface-1) 55%, transparent) !important;
+}
+.app-contents::before { display: none !important; }

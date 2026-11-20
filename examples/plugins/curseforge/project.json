@@ -1,0 +1,9 @@
+{
+	"id": "curseforge",
+	"name": "CurseForge",
+	"version": "1.0.0",
+	"author": "Rinthify",
+	"description": "Browse and install CurseForge mods, modpacks, resource packs, shaders and data packs.",
+	"main": "index.js",
+	"options": [{ "id": "key", "type": "text", "label": "API key", "default": "" }]
+}
